@@ -9,8 +9,8 @@ from scipy.signal import butter, filtfilt
 st.set_page_config(page_title="Test", layout="wide")
 
 # Reading data into a pandas DataFrame from csv
-df = pd.read_csv("MainLinearAcceleration.csv")
-gps = pd.read_csv("MainLocation.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/rowancape/physicsFinal/refs/heads/main/MainLinearAcceleration.csv")
+gps = pd.read_csv("https://raw.githubusercontent.com/rowancape/physicsFinal/refs/heads/main/MainLocation.csv")
 
 # Remove first and last 25 seconds to remove messy data
 max_time = df["Time (s)"].max()
